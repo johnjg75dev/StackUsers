@@ -11,8 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
-import org.w3c.dom.Text;
-
 public class UserViewHolder extends RecyclerView.ViewHolder {
 
     private ImageView ivGravatar;

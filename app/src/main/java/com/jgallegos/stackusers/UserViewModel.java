@@ -1,9 +1,5 @@
 package com.jgallegos.stackusers;
 
-import android.graphics.Bitmap;
-
-import com.bumptech.glide.Glide;
-
 /**
  * Stores information for an individual user
  */
