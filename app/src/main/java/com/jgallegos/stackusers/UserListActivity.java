@@ -7,9 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -79,8 +77,6 @@ public class UserListActivity extends AppCompatActivity {
                     }, new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-                            Log.e("[JSON]",error.toString());
-                            Toast.makeText(getApplicationContext(),"Error retrieving user list.", Toast.LENGTH_LONG);
                             //TODO: Add a retry button
                         }
                     });
