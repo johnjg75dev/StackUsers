@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUserActivity">
+
+    <ScrollView
+        android:id="@+id/svAddUserFieldContatiner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonPanel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <EditText
+                android:id="@+id/txtDisplayName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="75dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:textSize="28dp"
+                android:hint="Display Name"
+                android:layout_gravity="center"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <EditText
+                android:id="@+id/txtReputation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="75dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:textSize="28dp"
+                android:hint="Reputation"
+                android:layout_gravity="center"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <EditText
+                android:id="@+id/txtGoldBadgeCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="75dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:textSize="28dp"
+                android:hint="Gold Badge Count"
+                android:layout_gravity="center"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <EditText
+                android:id="@+id/txtSilverBadgeCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="75dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:textSize="28dp"
+                android:hint="Silver Badge Count"
+                android:layout_gravity="center"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <EditText
+                android:id="@+id/txtBronzeBadgeCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="75dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:textSize="28dp"
+                android:hint="Bronze Badge Count"
+                android:layout_gravity="center"
+                android:inputType="number" />
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/btnAddUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_add_user"
+            android:layout_margin="10dp"
+            android:textSize="24dp"
+            android:text="@string/title_activity_add_user" />
+
+    </LinearLayout>
+
+</RelativeLayout>
